@@ -15,6 +15,7 @@ public class MyPriorityQueue {
         head = null;
     }
 
+    //insert method to insert values in the queue and to arrange them in ascending order
     public void insert(int rollNumber, String name) {
         Node node = new Node();
         node.setName(name);
@@ -36,6 +37,7 @@ public class MyPriorityQueue {
         }
     }
 
+    // this method display will print the content of the queue
     public void display() {
         Node temp = head;
         while (temp != null) {

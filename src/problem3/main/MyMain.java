@@ -13,13 +13,14 @@ import problem3.myqueue.MyPriorityQueue;
 public class MyMain {
     public static void main(String[] args) {
         MyPriorityQueue myPriorityQueue = new MyPriorityQueue();
-        //now adding students to the queue
+
+        //now adding students to the queue using insert method
         myPriorityQueue.insert(29, "Kishori");
         myPriorityQueue.insert(51, "Roshni");
         myPriorityQueue.insert(46, "Rajni");
         myPriorityQueue.insert(40, "Nandinee");
 
         myPriorityQueue.display();
-        // this will enqueue the students details in an ascending order of roll number
+        // this will print the students details in an ascending order of their roll numbers
     }
 }
