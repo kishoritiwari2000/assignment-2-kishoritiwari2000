@@ -17,6 +17,8 @@ public class MyMain {
         MyBinarySearchTree tree = new MyBinarySearchTree();
         //creating binary search tree ::
         int i = 7;
+        System.out.println("Enter values");
+        //taking values as input for tree
         while (i > 0) {
             tree.add(sc.nextInt());
             i--;

@@ -29,5 +29,15 @@ public class MyMain {
                     /  \   /  \
                    1    3 5    7
          */
+        tree.preOrder(tree.root);
+        System.out.println();
+        tree.postOrder(tree.root);
+        /*
+        at input.....
+        7 5 4 3 2 6 1
+        we get output....
+        1 2 3 4 6 5 7
+        Hence, this shows that a is correct statement and b is wrong.
+         */
     }
 }
