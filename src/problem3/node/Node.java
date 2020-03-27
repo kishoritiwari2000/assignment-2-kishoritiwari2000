@@ -6,23 +6,25 @@
  */
 package problem3.node;
 
-import problem5.student.Student;
-
 public class Node {
-    private Student student;
-    private Node next;
+    String name;
+    int rollNumber;
+    Node next;
 
-    public Node(Student student) {
-        this.student = student;
-        next = null;
+    public String getName() {
+        return name;
     }
 
-    public Student getData() {
-        return student;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setData(Student student) {
-        this.student = student;
+    public int getRollNumber() {
+        return rollNumber;
+    }
+
+    public void setRollNumber(int rollNumber) {
+        this.rollNumber = rollNumber;
     }
 
     public Node getNext() {
