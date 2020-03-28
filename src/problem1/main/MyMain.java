@@ -9,27 +9,22 @@ package problem1.main;
 
 import problem1.mybst.MyBinarySearchTree;
 
-import java.util.Scanner;
-
 public class MyMain {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         MyBinarySearchTree tree = new MyBinarySearchTree();
         //creating binary search tree ::
-        int i = 7;
-        System.out.println("Enter values");
-        //taking values as input for tree
-        while (i > 0) {
-            tree.add(sc.nextInt());
-            i--;
-        }
-        /*tree will look alike::
-                         4
-                       /   \
-                      2     6
-                    /  \   /  \
-                   1    3 5    7
-         */
+        tree.insert(5);
+        tree.insert(10);
+        tree.insert(20);
+        tree.insert(4);
+        tree.insert(15);
+        tree.insert(6);
+        tree.insert(25);
 
+        System.out.println("ALL LEFT NODES:-");
+        tree.printLeftNode();
+
+        System.out.println("Count Of Nodes not having left node");
+        tree.countNotLeft();
     }
 }
